@@ -370,18 +370,26 @@
          "type" : "A"
       },
       {
-         ";" : ";; (mac:10:AE:60:F6:FC:C8) Amazon FireTV (Exercise Room; wifi-mac:a0:02:dc:a0:1b:0e)",
+         ";" : ";; (mac:10:AE:60:F6:FC:C8) Amazon FireTV (Exercise Room; wlan-mac:a0:02:dc:a0:1b:0e)",
          "class" : "IN",
          "content" : "10.19.1.51",
-         "name" : "a-firetv-1.4532CM",
+         "name" : "a-amzn-firetv-f6fcc8.4532CM",
          "ttl" : 3600,
          "type" : "A"
       },
       {
-         ";" : ";; (mac:00:BB:3A:4A:EC:7E) Amazon FireTV (Family Room; wifi-mac:)",
+         ";" : ";; (mac:00:BB:3A:4A:EC:7E) Amazon FireTV (Family Room; wlan-mac:a0:02:dc:fc:93:ff)",
          "class" : "IN",
          "content" : "10.19.1.52",
-         "name" : "a-firetv-2.4532CM",
+         "name" : "a-amzn-firetv-4aec7e.4532CM",
+         "ttl" : 3600,
+         "type" : "A"
+      },
+      {
+         ";" : ";; (mac:) Amazon FireTV (SPARE; wlan-mac:)",
+         "class" : "IN",
+         "content" : "10.19.1.53",
+         "name" : "a-amzn-firetv.4532CM",
          "ttl" : 3600,
          "type" : "A"
       },
@@ -1557,6 +1565,48 @@
          "class" : "IN",
          "content" : "qnap-2.4532CM.houseofivy.net.",
          "name" : "media.4532CM",
+         "ttl" : 3600,
+         "type" : "CNAME"
+      },
+      {
+         "class" : "IN",
+         "content" : "a-amzn-firetv-f6fcc8.4532CM.houseofivy.net.",
+         "name" : "firetv-ER",
+         "ttl" : 3600,
+         "type" : "CNAME"
+      },
+      {
+         "class" : "IN",
+         "content" : "a-amzn-firetv-4aec7e.4532CM.houseofivy.net.",
+         "name" : "firetv-FR",
+         "ttl" : 3600,
+         "type" : "CNAME"
+      },
+      {
+         "class" : "IN",
+         "content" : "a-amzn-firetv.4532CM.houseofivy.net.",
+         "name" : "firetv-spare",
+         "ttl" : 3600,
+         "type" : "CNAME"
+      },
+      {
+         "class" : "IN",
+         "content" : "a-amzn-firetv-f6fcc8.4532CM.houseofivy.net.",
+         "name" : "firetv-ER.4532CM",
+         "ttl" : 3600,
+         "type" : "CNAME"
+      },
+      {
+         "class" : "IN",
+         "content" : "a-amzn-firetv-4aec7e.4532CM.houseofivy.net.",
+         "name" : "firetv-FR.4532CM",
+         "ttl" : 3600,
+         "type" : "CNAME"
+      },
+      {
+         "class" : "IN",
+         "content" : "a-amzn-firetv.4532CM.houseofivy.net.",
+         "name" : "firetv-spare.4532CM",
          "ttl" : 3600,
          "type" : "CNAME"
       },
